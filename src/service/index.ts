@@ -26,9 +26,7 @@ const byPrice = (range?: { min?: number; max?: number }) => {
 
 export const productService = {
   getCategories: async () => {
-    if (import.meta.env.DEV) {
       await delay(1000);
-    }
     return Object.values((await import("./db")).categories);
   },
   getProducts: async ({
@@ -46,9 +44,7 @@ export const productService = {
       };
     };
   }) => {
-    if (import.meta.env.DEV) {
-      await delay(1000);
-    }
+    await delay(1000);
 
     const predicates = [
       byPrice(filters?.price),

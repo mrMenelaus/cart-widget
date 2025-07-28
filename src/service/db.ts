@@ -9,7 +9,7 @@ export const products: Product[] = [
   {
     id: 1,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -19,7 +19,7 @@ export const products: Product[] = [
   {
     id: 2,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -29,7 +29,7 @@ export const products: Product[] = [
   {
     id: 3,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -39,7 +39,7 @@ export const products: Product[] = [
   {
     id: 4,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -49,7 +49,7 @@ export const products: Product[] = [
   {
     id: 5,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -59,7 +59,7 @@ export const products: Product[] = [
   {
     id: 6,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -69,7 +69,7 @@ export const products: Product[] = [
   {
     id: 7,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -79,7 +79,7 @@ export const products: Product[] = [
   {
     id: 8,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -89,7 +89,7 @@ export const products: Product[] = [
   {
     id: 9,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.MALE],
@@ -99,7 +99,7 @@ export const products: Product[] = [
   {
     id: 10,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -109,7 +109,7 @@ export const products: Product[] = [
   {
     id: 11,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -119,7 +119,7 @@ export const products: Product[] = [
   {
     id: 12,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -129,7 +129,7 @@ export const products: Product[] = [
   {
     id: 13,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -139,7 +139,7 @@ export const products: Product[] = [
   {
     id: 14,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -149,7 +149,7 @@ export const products: Product[] = [
   {
     id: 15,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -159,7 +159,7 @@ export const products: Product[] = [
   {
     id: 16,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -169,7 +169,7 @@ export const products: Product[] = [
   {
     id: 17,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -179,7 +179,7 @@ export const products: Product[] = [
   {
     id: 18,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -189,7 +189,7 @@ export const products: Product[] = [
   {
     id: 19,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],
@@ -199,7 +199,7 @@ export const products: Product[] = [
   {
     id: 20,
     title: "TABAC RAT T-SHIRT",
-    price: 109.95,
+    price: 10995,
     description:
       "SHORT-SLEEVE T-SHIRT IN PAPER THIN COTTON JERSEY. BOXY, CROPPED FIT. RIB KNIT NECKLINE. SINGLE STITCH HEM AT WAIST AND CUFFS. PRINTED ARTWORK ON FRONT AND BACK. SIGNATURE VINTAGE WASH PROCESS. MADE IN THE USA.",
     categories: [categories.FEMALE],

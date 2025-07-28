@@ -1,4 +1,4 @@
-import { useShopStore } from "@/store";
+import { useCartItems, useShopStore } from "@/store";
 import { Button } from "../ui/button";
 import {
   Sheet,
@@ -14,18 +14,19 @@ import { CartProductCard } from "../CartProductCard/CartProductCard";
 import { useMemo } from "react";
 import { toast } from "sonner";
 import { format } from "@/lib/date";
+import { Price } from "../ui/price";
 
 export default function Cart() {
   const resetCart = useShopStore((state) => state.resetCart);
-  const cart = useShopStore((state) => state.cart);
+  const cart = useCartItems();
   const price = useMemo(() => {
-    return Math.floor(cart.reduce((acc, cur) => {
+    return cart.reduce((acc, cur) => {
       return acc + cur.price;
-    }, 0));
+    }, 0);
   }, [cart]);
 
   const makeOrder = () => {
-    toast("Успешный заказ", {
+    toast.success("Успешный заказ", {
       description: `Дата заказа ${format(new Date(Date.now()))}`,
     });
     resetCart();
@@ -43,23 +44,19 @@ export default function Cart() {
         </SheetHeader>
         <div className="flex flex-col px-4 gap-2 overflow-auto">
           {cart.map((product) => (
-            <CartProductCard product={product} />
+            <CartProductCard product={product} key={product.id} />
           ))}
         </div>
         <SheetFooter>
-            <div className="flex justify-between">
-            <span>
-            Итого
-            </span>
-            <span>
-              {price}&#x20bd;
-            </span>
-            </div>
-           <SheetClose asChild>
-              <Button disabled={cart.length === 0} onClick={makeOrder}>
-                Оформить заказ
-              </Button>
-            </SheetClose>
+          <div className="flex justify-between">
+            <span>Итого</span>
+            <Price value={price} />
+          </div>
+          <SheetClose asChild>
+            <Button disabled={cart.length === 0} onClick={makeOrder}>
+              Оформить заказ
+            </Button>
+          </SheetClose>
         </SheetFooter>
       </SheetContent>
     </Sheet>

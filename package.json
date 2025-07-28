@@ -1,6 +1,6 @@
 {
   "name": "basket",
-  "homepage": "https://mrMenelaus.github.io/cart-widget/",
+  "homepage": "https://mrmenelaus.github.io/cart-widget/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",

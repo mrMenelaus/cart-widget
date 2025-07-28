@@ -8,13 +8,14 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import { Price } from "../ui/price";
 
 interface Props {
   product: Product
 }
 
 export function CartProductCard({product} : Props) {
-  const {removeFromCart} = useShopStore()
+  const removeFromCart = useShopStore(state => state.removeFromCart)
   const {description,image,price,title, id} = product
   return (
     <Card
@@ -30,9 +31,8 @@ export function CartProductCard({product} : Props) {
         <img className="w-full h-auto" src={image} alt="" />
       </CardContent>
       <CardFooter className="flex flex-col gap-1 items-start">
-        <span>
-          ${price}
-        </span>
+                    <Price value={price} />
+        
         <Button variant="destructive" onClick={() => removeFromCart(id)}>
     Удалить из корзины
           </Button>

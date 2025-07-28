@@ -6,11 +6,11 @@ export interface Category {
   value: string;
 }
 export interface ProductFilters {
-  categories: Set<number>
+  categories: Set<number>;
   price: {
-    min: number,
-    max: number
-  }
+    min: number;
+    max: number;
+  };
 }
 
 export interface Product {
@@ -22,10 +22,11 @@ export interface Product {
   image: string;
 }
 
+type Cart = Map<number, Product>;
+
 interface Store {
-  cart: Product[];
+  cart: Cart;
   addToCart: (product: Product) => void;
-  setCart: (products: Product[]) => void;
   removeFromCart: (id: number) => void;
   resetCart: () => void;
 }
@@ -33,22 +34,40 @@ interface Store {
 export const useShopStore = create<Store>()(
   persist(
     (set) => ({
-      cart: [],
-      setCart(products) {
-        set({ cart: products });
-      },
+      cart: new Map(),
       addToCart: (product) => {
-        set((state) => ({ cart: [...state.cart, product] }));
+        set((state) => {
+          const cart = new Map(state.cart);
+          cart.set(product.id, product);
+          return { cart };
+        });
       },
       removeFromCart: (id) => {
-        set((state) => ({
-          cart: state.cart.filter((product) => product.id !== id),
-        }));
+        set((state) => {
+          const cart = new Map(state.cart);
+          cart.delete(id);
+          return { cart };
+        });
       },
       resetCart: () => {
-        set({cart: []})
+        set({ cart: new Map() });
       },
     }),
-    { name: "cart", partialize: (state) => ({ cart: state.cart }) }
+    {
+      name: "cart",
+      partialize: (state) => ({ cart: [...state.cart.entries()] }),
+      merge: (persisted, state) => {
+        const {cart} = persisted as {cart: [number, Product][]}
+        return {
+          ...state,
+          cart: new Map(cart),
+        };
+      },
+    }
   )
 );
+
+export function useCartItems () {
+   const cart = useShopStore((state) => state.cart)
+   return [...cart.values()]
+}

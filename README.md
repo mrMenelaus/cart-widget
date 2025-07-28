@@ -1,69 +1,34 @@
-# React + TypeScript + Vite
+# 🛒 Минималистичный магазин
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Лента товаров с фильтрами и корзина, написанные с использованием современных технологий. 
 
-Currently, two official plugins are available:
+## 🚀 Стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://react.dev/)
+- [Zustand](https://github.com/pmndrs/zustand) — состояние корзины
+- [TanStack Query](https://tanstack.com/query) — работа с фильтрами
+- [shadcn/ui](https://ui.shadcn.com/) — современный UI
+- [Vite](https://vitejs.dev/) — сборка
 
-## Expanding the ESLint configuration
+## ✨ Возможности
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔍 **Фильтрация по цене и категориям** — без лагов, с оптимизированной логикой
+- 🛒 **Корзина без регистрации** — с `persist`-хранилищем (автоматически сохраняется в `localStorage`)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚡ **Производительность**:
+  - Нет лишних ререндеров
+  - Мемоизация и отложенная загрузка
+  - Размер бандла: `90 кБ`, чанк корзины — всего `10 кБ`
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🧩 Архитектура
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Использование `Map` в Zustand — быстрые проверки и доступ
+- Возможность расширения (сортировка, бренды, рейтинги и т.д.)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Установка
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/mr_menelaus/cart-widget
+cd cart-widget
+npm install
+npm run dev
